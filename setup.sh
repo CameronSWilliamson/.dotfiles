@@ -1,9 +1,9 @@
 #!/bin/bash
 
-BASEDIR="$(cd "$dirname "${BASH_SOURCE[0]}")" && pwd)"
+BASEDIR=$(pwd)
 
-ln -s ${BASEDIR}/alacritty ~/.config/alacritty
-ln -s ${BASEDIR}/fish ~/.config/fish
-ln -s ${BASEDIR}/gh ~/.config/gh
-ln -s ${BASEDIR}/nvim ~/.config/nvim
-ln -s ${BASEDIR}/.gitconfig ~/.gitconfig
+ln -s -f $BASEDIR/alacritty ~/.config/alacritty
+ln -s -f $BASEDIR/fish ~/.config/fish
+ln -s -f $BASEDIR/gh ~/.config/gh
+ln -s -f $BASEDIR/nvim ~/.config/nvim
+ln -s -f $BASEDIR/.gitconfig ~/.gitconfig
