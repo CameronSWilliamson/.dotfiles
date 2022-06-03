@@ -1,0 +1,11 @@
+[user]
+	name = Cameron S. Williamson
+	email = therealkey@outlook.com
+[core]
+	editor = nvim
+[pull]
+	rebase = true
+[fetch]
+    prune = true
+[diff]
+	colorMoved = zebra
