@@ -21,4 +21,7 @@ alias cm 'xmodmap ~/.config/fish/colemak_dh_ansi_us.xmodmap'
 alias qw 'xmodmap ~/.config/fish/qwerty.xmodmap'
 alias kubectl="minikube kubectl --"
 
+contains ~/bin $fish_user_paths; or set -Ua fish_user_paths ~/bin
+contains ~/.cargo/bin $fish_user_paths; or set -Ua fish_user_paths ~/.cargo/bin
+
 starship init fish | source
