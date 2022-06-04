@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
         branch = 'v1',
     }
     use 'olimorris/onedarkpro.nvim'
+    use 'simrat39/rust-tools.nvim'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
     if packer_bootstrap then

@@ -9,6 +9,7 @@ vim.cmd("au FocusGained,BufEnter * :silent! !")
 require('lualine').setup({options = { theme = 'everblush' }})
 require'nvim-tree'.setup {}
 require'hop'.setup()
+require('rust-tools').setup({})
 
 --[
 -- Mapping Functions
