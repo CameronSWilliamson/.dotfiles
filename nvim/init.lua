@@ -1,7 +1,7 @@
 vim.cmd("source ~/.config/nvim/utils.vim")
+local use = require('plugins')
 require('lsp')
 require('bindings')
-local use = require('plugins')
 --vim.cmd("colorscheme everblush")
 require('onedarkpro').load()
 vim.g.mapleader = ","
