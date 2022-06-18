@@ -11,4 +11,6 @@ require('lualine').setup({options = { theme = 'everblush' }})
 require'nvim-tree'.setup {}
 require'hop'.setup()
 require('rust-tools').setup({})
-
+vim.o.foldmethod = 'expr'
+vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.o.foldlevel = 99

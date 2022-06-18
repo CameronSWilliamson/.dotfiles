@@ -10,6 +10,9 @@ end
 function vmap(shortcut, command)
     map('v', shortcut, command)
 end
+function tmap(shortcut, command)
+    map('t', shortcut, command)
+end
 -- Telescope
 nmap("<leader>ff", "<cmd>Telescope find_files<cr>")
 nmap("<leader><tab>", "<cmd>Telescope find_files<cr>") 
@@ -19,7 +22,7 @@ nmap("<leader>fh", "<cmd>Telescope help_tags<cr>")
 -- Reload init.lua / init.vim
 nmap("<leader>ll", "<cmd>source ~/.config/nvim/init.lua<cr>")
 -- Nvim tree
-nmap("<C-n>", "<cmd>NvimTreeToggle<cr>")
+nmap("<leader>n", "<cmd>NvimTreeToggle<cr>")
 nmap("R", "<cmd>NvimTreeRefresh<cr>")
 -- Hop
 nmap("<leader>w", "<cmd>HopWord<cr>")
@@ -32,3 +35,6 @@ nmap("<C-h>", "<C-w>h")
 nmap("<C-j>", "<C-w>j")
 nmap("<C-k>", "<C-w>k")
 nmap("<C-l>", "<C-w>l")
+tmap("<Esc>", "<C-\\><C-n>")
+tmap("jk", "<C-\\><C-n>")
+nmap(";", ":")

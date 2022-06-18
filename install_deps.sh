@@ -38,3 +38,5 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 wget https://github.com/cli/cli/releases/download/v2.12.1/gh_2.12.1_linux_amd64.deb
 apti ./gh_2.12.1_linux_amd64.deb
 rm ./gh_2.12.1_linux_amd64.deb
+# Colored ls command
+sudo apt install exa

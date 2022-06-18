@@ -3,7 +3,7 @@ function cs
     ls -lha
 end
 
-alias ls 'ls -lha'
+alias ls 'exa -al --color=always --group-directories-first --icons'
 alias v nvim
 alias vi nvim
 alias sv 'vim -u ~/.SpaceVim/vimrc'
@@ -12,8 +12,8 @@ alias readme 'wget https://raw.githubusercontent.com/othneildrew/Best-README-Tem
 alias vf 'v ~/.config/fish/config.fish'
 alias vv 'v ~/.config/nvim/init.lua'
 
-alias cv 'cd ~/.config/nvim'
-alias cf 'cd ~/.config/fish'
+alias cv 'cd ~/dotfiles/nvim'
+alias cf 'cd ~/dotfiles/fish'
 
 alias 322 'cd ~/Dev/322;source ./322-venv/bin/activate.fish'
 
