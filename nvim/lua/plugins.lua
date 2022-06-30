@@ -30,4 +30,6 @@ return require('packer').startup(function()
     use 'olimorris/onedarkpro.nvim'
     use 'simrat39/rust-tools.nvim'
     use 'mhinz/vim-startify'
+    use 'github/copilot.vim'
+    use 'williamboman/nvim-lsp-installer'
 end)

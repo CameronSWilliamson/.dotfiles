@@ -1,7 +1,8 @@
 -- Configure Language Server
 require'lspconfig'.pyright.setup {}
 require'lspconfig'.rust_analyzer.setup{}
-
+require'lspconfig'.omnisharp.setup{}
+require("nvim-lsp-installer").setup {}
 --[
 -- Configure Snippets
 --]
@@ -62,7 +63,7 @@ cmp.setup {
 
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "python", "lua", "rust" },
+  ensure_installed = { "python", "lua", "rust", "c_sharp" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -119,7 +120,7 @@ local on_attach = function(client, bufnr)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
-local servers = { 'pyright', 'rust_analyzer' }
+local servers = { 'pyright', 'rust_analyzer', 'omnisharp' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
