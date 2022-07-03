@@ -25,7 +25,7 @@ nmap("<leader>ll", "<cmd>source ~/.config/nvim/init.lua<cr>")
 nmap("<leader>n", "<cmd>NvimTreeToggle<cr>")
 nmap("R", "<cmd>NvimTreeRefresh<cr>")
 -- Hop
-nmap("<leader>w", "<cmd>HopWord<cr>")
+nmap("<leader>s", "<cmd>HopWord<cr>")
 nmap("<leader>j", "<cmd>HopLine<cr>")
 -- Misc
 nmap("<leader>t", "<C-w>s <C-w>j <cmd>term<cr><C-w>20-")
