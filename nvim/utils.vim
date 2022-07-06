@@ -12,7 +12,6 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " Misc settings
 set signcolumn=number
-set spelllang=en_us
 set number relativenumber
 set tabstop=4
 set shiftwidth=4
@@ -120,3 +119,16 @@ let g:mkdp_filetypes = ['markdown']
 let g:mkdp_theme = 'dark'
 
 nnoremap <leader>mp <Plug>MarkdownPreviewToggle
+
+" LATEX
+let g:tex_flavor='latex'
+let g:vimtex_view_mode='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+hi Conceal ctermbg=none
+nnoremap <leader>vtc <Plug>VimtexCompile
+
+" Spelling
+set spelllang=en_us
+"set spell 
