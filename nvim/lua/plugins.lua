@@ -31,13 +31,12 @@ return require('packer').startup(function()
     use 'simrat39/rust-tools.nvim'
     use 'mhinz/vim-startify'
     use 'github/copilot.vim'
-    use 'williamboman/nvim-lsp-installer'
+    use {
+        "williamboman/nvim-lsp-installer",
+        "neovim/nvim-lspconfig",
+    }
     use 'vimwiki/vimwiki'
-    -- install without yarn or npm
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
-    })
-
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+    use 'lervag/vimtex'
+    use 'KeitaNakamura/tex-conceal.vim'
 end)
