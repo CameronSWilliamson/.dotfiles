@@ -2,6 +2,7 @@
 require'lspconfig'.pyright.setup {}
 require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.omnisharp.setup{}
+require'lspconfig'.gopls.setup{}
 require("nvim-lsp-installer").setup {}
 --[
 -- Configure Snippets
