@@ -1,15 +1,18 @@
 # Keybindings
 
+You can find a pretty good cheatsheet [here](https://vim.rtorr.com/)
+
 The default leader key in my vim configuration is `,`. This can be changed, but note that all commas will be changed with whatever the new leader key is.
 
 ## Telescope
 
-| Key               | Command                 |
-| ----------------- | ----------------------- |
-| `,ff` or `,<tab>` | `:Telescope find_files` |
-| `,fg`             | `:Telescope live_grep`  |
-| `,fb`             | `:Telescope buffers`    |
-| `,fh`             | `:Telescope help_tags`  |
+| Key               | Command                  |
+| ----------------- | -----------------------  |
+| `,ff` or `,<tab>` | `:Telescope find_files`  |
+| `,fg`             | `:Telescope live_grep`   |
+| `,fb`             | `:Telescope buffers`     |
+| `,fh`             | `:Telescope help_tags`   |
+| `,ps`             | `:Telescope grep_search` |
 
 ## LSP
 
@@ -57,11 +60,24 @@ Add the leader key to any copy command and it will copy/paste to and from the cl
 
 ## Misc
 
-| Key     | Command                               |
-| ------- | ------------------------------------- |
-| `,ll`   | Reload `init.lua`                     |
-| `,t`    | Open terminal in current buffer       |
-| `<esc>` | From inserrt to normal mode in buffer |
-| `<C-z>` | Exit vim, use `fg` to restore vim     |
-| `gv`    | Reselect previous visual selection    |
+| Key     | Command                                          |
+| ------- | -------------------------------------            |
+| `,ll`   | Reload `init.lua`                                |
+| `,t`    | Open terminal in current buffer                  |
+| `<esc>` | From inserrt to normal mode in buffer            |
+| `<C-z>` | Exit vim, use `fg` to restore vim                |
+| `gv`    | Reselect previous visual selection               |
+| `fx`    | Jump to next occurence of character x            |
+| `tx`    | Jump to before next occurence of character x     |
+| `Fx`    | Jump to the previous occurence of character x    |
+| `Tx`    | Jump to after previous occurence of character x  |
+| `;`     | Repeat previous f, t, F or T movement (unbound)  |
+| `,`     | Repeat previous f, t, F or T movement, backwards |
+
+## Visual Mode Help
+
+| Keys         | Action                                       |
+|--------------|----------------------------------------------|
+| `yss[paren]` | Surrounds the current line in `[paren]`      |
+| `vS[paren]`  | Surrounds the current selection in `[paren]` |
 
