@@ -1,22 +1,45 @@
-augroup highlight_yank
-	autocmd!
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s+$//e
+    call winrestview(l:save)
+endfun
+
+augroup AutoCommands
+    autocmd!
+    autocmd BufWritePre * :call TrimWhitespace()
 	au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=200}
 augroup END
 
 " Leader key
-let mapleader = ","
+let mapleader = " "
 
 " Move across wrapped lines
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for > ")})<CR>
 
-" Misc settings
-set signcolumn=number
-set number relativenumber
-set tabstop=4
+" Set Commands
+set guicursor=i:block
+set hidden
+set relativenumber nu
+set nohlsearch
+set noerrorbells
+set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
+set smartindent
+set smartcase
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set termguicolors
+set scrolloff=8
+set noshowmode
+set signcolumn
 set mouse=a
+set colorcolumn=80
 tnoremap <Esc> <C-\><C-n>
 
 
