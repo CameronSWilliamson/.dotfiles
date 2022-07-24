@@ -1,6 +1,6 @@
 # Keybindings
 
-You can find a pretty good cheatsheet [here](https://vim.rtorr.com/)
+You can find a pretty good cheatsheet [here](https://vim.rtorr.com/). Most of these keybindings are set inside of [this](lua/bindings.lua) file.
 
 The default leader key in my vim configuration is `,`. This can be changed, but note that all commas will be changed with whatever the new leader key is.
 
@@ -81,3 +81,14 @@ Add the leader key to any copy command and it will copy/paste to and from the cl
 | `yss[paren]` | Surrounds the current line in `[paren]`      |
 | `vS[paren]`  | Surrounds the current selection in `[paren]` |
 
+## Tabs
+
+
+| Keys              | Action                        |
+|-------------------|-------------------------------|
+| `:tabedit {file}` | edit file in a new tab        |
+| `:tabfind {file}` | Opens tab with filename given |
+| `gt`              | Go to next tab                |
+| `gT`              | Go to previous tab            |
+
+If the file you're editing contains the name of another file you can do `gf` on the name to go to the file. `<c-w> gf` to open in new tab.
