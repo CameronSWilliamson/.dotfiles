@@ -14,6 +14,7 @@ alias vv 'v ~/.config/nvim/init.lua'
 
 alias cv 'cd ~/dotfiles/nvim'
 alias cf 'cd ~/dotfiles/fish'
+alias cvw 'cd ~/NextCloud/vimwiki'
 
 alias 322 'cd ~/Dev/322;source ./322-venv/bin/activate.fish'
 
