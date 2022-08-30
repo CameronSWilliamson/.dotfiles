@@ -1,9 +1,14 @@
 -- Configure Language Server
-require'lspconfig'.pyright.setup {}
-require'lspconfig'.rust_analyzer.setup{}
-require'lspconfig'.omnisharp.setup{}
-require'lspconfig'.gopls.setup{}
-require("nvim-lsp-installer").setup {}
+require("mason").setup()
+local lsp_installer = require("mason-lspconfig")
+local lspconfig = require("lspconfig")
+lsp_installer.setup{}
+--require("mason-lspconfig").setup()
+--require'lspconfig'.pyright.setup {}
+--require'lspconfig'.rust_analyzer.setup{}
+--require'lspconfig'.omnisharp.setup{}
+--require'lspconfig'.gopls.setup{}
+
 --[
 -- Configure Snippets
 --]
@@ -121,8 +126,14 @@ local on_attach = function(client, bufnr)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
-local servers = { 'pyright', 'rust_analyzer', 'omnisharp' }
-for _, lsp in ipairs(servers) do
+for _, lsp in ipairs(lsp_installer.get_installed_servers()) do
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+end
+
+for _, lsp in ipairs({ 'metals' }) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,

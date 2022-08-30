@@ -5,7 +5,6 @@ return require('packer').startup(function()
         'nvim-telescope/telescope.nvim',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use 'neovim/nvim-lspconfig'
     use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
     use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
     use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
@@ -32,7 +31,8 @@ return require('packer').startup(function()
     use 'mhinz/vim-startify'
     use 'github/copilot.vim'
     use {
-        "williamboman/nvim-lsp-installer",
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
     }
     use 'vimwiki/vimwiki'
