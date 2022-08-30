@@ -1,4 +1,4 @@
-function cs
+function cls
     cd $argv
     ls -lha
 end
