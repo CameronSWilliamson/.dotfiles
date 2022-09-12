@@ -141,7 +141,6 @@ let g:mkdp_filetypes = ['markdown']
 " By default the theme is define according to the preferences of the system
 let g:mkdp_theme = 'dark'
 
-nnoremap <leader>mp <Plug>MarkdownPreviewToggle
 
 " LATEX
 let g:tex_flavor='latex'

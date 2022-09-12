@@ -36,7 +36,8 @@ return require('packer').startup(function()
         "neovim/nvim-lspconfig",
     }
     use 'vimwiki/vimwiki'
-    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     use 'lervag/vimtex'
     use 'KeitaNakamura/tex-conceal.vim'
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+    use 'bfrg/vim-cpp-modern'
 end)
