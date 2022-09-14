@@ -35,6 +35,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
+curl -sS https://starship.rs/install.sh | sh
 # wget https://github.com/cli/cli/releases/download/v2.12.1/gh_2.12.1_linux_amd64.deb
 # apti ./gh_2.12.1_linux_amd64.deb
 # rm ./gh_2.12.1_linux_amd64.deb
