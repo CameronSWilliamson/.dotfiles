@@ -2,15 +2,40 @@
 
 BASE=$(pwd)
 
-ln -sf $BASE/alacritty ~/.config/alacritty
-ln -sf $BASE/fish ~/.config/fish
-ln -sf $BASE/gh ~/.config/gh
-ln -sf $BASE/i3 ~/.config/i3
-ln -sf $BASE/kitty ~/.config/kitty
-ln -sf $BASE/nvim ~/.config/nvim
-ln -sf $BASE/.gitconfig ~/.gitconfig
+function link() {
+    ln -sf $BASE/$1 ~/$2
+}
 
-echo "if [[ \$(ps --no-header --pid=\$PPID --format=comm) != "fish" && -z \${BASH_EXECUTION_STRING} ]]" >> ~/.bashrc
-echo "then" >> ~/.bashrc
-echo "	exec fish" >> ~/.bashrc
-echo "fi" >> ~/.bashrc
+function config() {
+    link $1 .config/$1
+}
+
+function home() {
+    link $1 $1
+}
+
+configFiles=(
+    alacritty
+    fish
+    gh
+    i3
+    kitty
+    nvim
+)
+
+homeFiles=(
+    .gitconfig
+    .tmux.conf
+    .zshrc
+)
+
+for file in "${configFiles[@]}"
+do
+    config $file
+done
+
+for file in "${homeFiles[@]}"
+do
+    home $file
+done
+

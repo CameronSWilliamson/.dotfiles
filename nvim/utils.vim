@@ -54,7 +54,7 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
-let g:vimwiki_list = [{'path': '~/NextCloud/vimwiki/','syntax':'markdown','ext':'.md'}]
+let g:vimwiki_list = [{'path': '~/Nextcloud/vimwiki/','syntax':'markdown','ext':'.md'}]
 
 " Markdown Preview Settings
 " set to 1, nvim will open the preview window after entering the markdown buffer
