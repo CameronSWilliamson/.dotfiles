@@ -73,6 +73,7 @@ Add the leader key to any copy command and it will copy/paste to and from the cl
 | `Tx`    | Jump to after previous occurence of character x  |
 | `;`     | Repeat previous f, t, F or T movement (unbound)  |
 | `,`     | Repeat previous f, t, F or T movement, backwards |
+| `zfa}`  | Create a fold                                    |
 
 ## Visual Mode Help
 

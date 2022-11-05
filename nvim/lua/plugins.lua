@@ -27,9 +27,16 @@ return require('packer').startup(function()
         branch = 'v1',
     }
     use 'olimorris/onedarkpro.nvim'
+    use 'dracula/vim'
     use 'simrat39/rust-tools.nvim'
-    use 'mhinz/vim-startify'
+    -- use 'mhinz/vim-startify'
+    use 'fatih/vim-go'
+    use {
+        "startup-nvim/startup.nvim",
+        requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+    }
     use 'github/copilot.vim'
+    use 'airblade/vim-gitgutter'
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
@@ -40,4 +47,5 @@ return require('packer').startup(function()
     use 'KeitaNakamura/tex-conceal.vim'
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     use 'bfrg/vim-cpp-modern'
+    use {"ellisonleao/glow.nvim"}
 end)

@@ -40,6 +40,7 @@ set noshowmode
 set signcolumn
 set mouse=a
 set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=black
 tnoremap <Esc> <C-\><C-n>
 
 
@@ -149,8 +150,14 @@ let g:vimtex_quickfix_mode=0
 set conceallevel=1
 let g:tex_conceal='abdmg'
 hi Conceal ctermbg=none
-nnoremap <leader>vtc <Plug>VimtexCompile
 
 " Spelling
 set spelllang=en_us
 "set spell 
+"
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+endif
+
