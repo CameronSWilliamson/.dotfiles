@@ -8,7 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="half-life"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -105,12 +106,14 @@ export PATH="/usr/local/go/bin:$GOPATH/bin:/usr/local/gradle/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="~/bin:$PATH"
 
+alias pdf="zathura"
 alias code="code --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto > /dev/null"
 alias atom="atom --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto > /dev/null"
 alias dev="cd ~/Nextcloud/Dev"
 alias v="nvim"
 alias vi="nvim"
 alias sdn="shutdown now"
+alias rdn="reboot"
 
 alias tmux="TERM=screen-256-color tmux"
 
@@ -120,6 +123,11 @@ source ~/.cpscrc
 alias bashrc="cat $HOME/.bashrc"
 alias sdprc="cat $HOME/.sdprc"
 alias cpscrc="cat $HOME/.cpscrc"
+alias zshrc="cat $HOME/.zshrc"
+
+function gcm() {
+    git commit -m "$1"
+}
 
 if [ -z "$TMUX" ]
 then
