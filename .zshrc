@@ -125,10 +125,6 @@ alias sdprc="cat $HOME/.sdprc"
 alias cpscrc="cat $HOME/.cpscrc"
 alias zshrc="cat $HOME/.zshrc"
 
-function gcm() {
-    git commit -m "$1"
-}
-
 if [ -z "$TMUX" ]
 then
 	exec tmux -2
