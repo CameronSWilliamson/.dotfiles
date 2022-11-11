@@ -31,7 +31,7 @@ set smartindent
 set smartcase
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+set undodir=~/.config/nvim/.undodir
 set undofile
 set incsearch
 set termguicolors
@@ -160,4 +160,3 @@ if exists('+termguicolors')
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
     set termguicolors
 endif
-

@@ -30,7 +30,7 @@ return require('packer').startup(function()
     use 'dracula/vim'
     use 'simrat39/rust-tools.nvim'
     -- use 'mhinz/vim-startify'
-    use 'fatih/vim-go'
+    --use 'fatih/vim-go'
     use {
         "startup-nvim/startup.nvim",
         requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
@@ -49,4 +49,5 @@ return require('packer').startup(function()
     use 'bfrg/vim-cpp-modern'
     use {"ellisonleao/glow.nvim"}
     use {"tpope/vim-commentary"}
+    use {"mbbill/undotree"}
 end)
