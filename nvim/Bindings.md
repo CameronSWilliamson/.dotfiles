@@ -81,6 +81,7 @@ Add the leader key to any copy command and it will copy/paste to and from the cl
 |--------------|----------------------------------------------|
 | `yss[paren]` | Surrounds the current line in `[paren]`      |
 | `vS[paren]`  | Surrounds the current selection in `[paren]` |
+| `o` and `O`  | Switch sides in a visual selection           |
 
 ## Tabs
 
@@ -100,5 +101,11 @@ Add the leader key to any copy command and it will copy/paste to and from the cl
 | `vi{`   | Select block not including `{`            |
 | `<S-v>` | Select entire line                        |
 | `vt}`   | Select to the next `}` character          |
+
+## Copy to and from Clipboard
+
+| Keys  | Action               |
+| `"+p` | Paste from clipboard |
+| `"+y` | Yank from clipboard  |
 
 If the file you're editing contains the name of another file you can do `gf` on the name to go to the file. `<c-w> gf` to open in new tab.

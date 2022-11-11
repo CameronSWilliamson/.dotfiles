@@ -27,7 +27,7 @@ nmap("R", "<cmd>NvimTreeRefresh<cr>")
 -- Hop
 nmap("<leader>s", "<cmd>HopWord<cr>")
 nmap("<leader>j", "<cmd>HopLine<cr>")
--- Misc
+-- Miscbindi
 nmap("<leader>t", "<C-w>s <C-w>j <cmd>term<cr><C-w>20-")
 nmap("<leader>u", "20<C-w>-")
 imap("jk", "<esc>")
@@ -48,3 +48,4 @@ nmap("<leader>tn", "<cmd>tabnew<cr>")
 nmap("<A-a>", "<C-a>")
 nmap("<A-x>", "<A-x>")
 nmap("<F5>", "<cmd>UndotreeToggle<cr>")
+nmap("<leader>p", "\"_dP")
