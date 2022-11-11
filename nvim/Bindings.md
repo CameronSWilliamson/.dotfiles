@@ -84,12 +84,21 @@ Add the leader key to any copy command and it will copy/paste to and from the cl
 
 ## Tabs
 
+| Keys                              | Action                        |
+|-----------------------------------|-------------------------------|
+| `:tabedit {file}` or `<leader>tn` | edit file in a new tab        |
+| `:tabfind {file}`                 | Opens tab with filename given |
+| `gt`                              | Go to next tab                |
+| `gT`                              | Go to previous tab            |
 
-| Keys              | Action                        |
-|-------------------|-------------------------------|
-| `:tabedit {file}` | edit file in a new tab        |
-| `:tabfind {file}` | Opens tab with filename given |
-| `gt`              | Go to next tab                |
-| `gT`              | Go to previous tab            |
+## General Movement Tips
+
+| Keys    | Action                                    |
+|---------|-------------------------------------------|
+| `vaW`   | Select word up to whitespace              |
+| `va{`   | Select the entire block including the `{` |
+| `vi{`   | Select block not including `{`            |
+| `<S-v>` | Select entire line                        |
+| `vt}`   | Select to the next `}` character          |
 
 If the file you're editing contains the name of another file you can do `gf` on the name to go to the file. `<c-w> gf` to open in new tab.
