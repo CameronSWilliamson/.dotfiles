@@ -101,10 +101,12 @@ Add the leader key to any copy command and it will copy/paste to and from the cl
 | `vi{`   | Select block not including `{`            |
 | `<S-v>` | Select entire line                        |
 | `vt}`   | Select to the next `}` character          |
+| `%`     | Jump to matching bracket                  |
 
 ## Copy to and from Clipboard
 
 | Keys  | Action               |
+|-------|----------------------|
 | `"+p` | Paste from clipboard |
 | `"+y` | Yank from clipboard  |
 

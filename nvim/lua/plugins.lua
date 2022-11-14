@@ -50,4 +50,5 @@ return require('packer').startup(function()
     use {"ellisonleao/glow.nvim"}
     use {"tpope/vim-commentary"}
     use {"mbbill/undotree"}
+    use {"mhartington/formatter.nvim"}
 end)

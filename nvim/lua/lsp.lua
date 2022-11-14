@@ -3,11 +3,6 @@ require("mason").setup()
 local lsp_installer = require("mason-lspconfig")
 local lspconfig = require("lspconfig")
 lsp_installer.setup{}
---require("mason-lspconfig").setup()
---require'lspconfig'.pyright.setup {}
---require'lspconfig'.rust_analyzer.setup{}
---require'lspconfig'.omnisharp.setup{}
---require'lspconfig'.gopls.setup{}
 
 --[
 -- Configure Snippets
