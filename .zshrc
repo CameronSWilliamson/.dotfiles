@@ -125,8 +125,9 @@ alias sdprc="cat $HOME/.sdprc"
 alias cpscrc="cat $HOME/.cpscrc"
 alias zshrc="cat $HOME/.zshrc"
 
-if [ -z "$TMUX" ]
-then
+if [ "$TERM_PROGRAM" != "vscode" ] && [ -z "$TMUX" ]; then
+#if [ -z "$TMUX" ]
+#then
 	exec tmux -2
 fi
 
