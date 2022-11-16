@@ -27,6 +27,7 @@ homeFiles=(
     .gitconfig
     .tmux.conf
     .zshrc
+    .condarc
 )
 
 for file in "${configFiles[@]}"
