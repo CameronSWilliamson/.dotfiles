@@ -124,6 +124,7 @@ alias bashrc="cat $HOME/.bashrc"
 alias sdprc="cat $HOME/.sdprc"
 alias cpscrc="cat $HOME/.cpscrc"
 alias zshrc="cat $HOME/.zshrc"
+alias sau="sudo apt update; sudo apt upgrade -y"
 
 if [ "$TERM_PROGRAM" != "vscode" ] && [ -z "$TMUX" ]; then
 #if [ -z "$TMUX" ]
