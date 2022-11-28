@@ -24,7 +24,6 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for > ")})<CR>
 
 " Set Commands
-set guicursor=i:block
 set hidden
 set relativenumber nu
 set nohlsearch
