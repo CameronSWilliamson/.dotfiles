@@ -4,11 +4,6 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 
-augroup FormatAutoGroup
-    autocmd!
-    autocmd BufWritePost * FormatWrite
-augroup END
-
 augroup AutoCommands
     autocmd!
     autocmd BufWritePre * :call TrimWhitespace()

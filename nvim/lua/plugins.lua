@@ -15,12 +15,6 @@ return require('packer').startup(function()
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
     use { 'mangeshrex/everblush.vim'} -- Theme
-    use {
-        'kyazdani42/nvim-tree.lua', -- Filetree on left side
-        requires = {
-            'kyazdani42/nvim-web-devicons', -- optional, for file icon
-        },
-    }
     use { 'tpope/vim-surround' }
     use { 
         'phaazon/hop.nvim',
@@ -45,13 +39,9 @@ return require('packer').startup(function()
     use 'vimwiki/vimwiki'
     use 'lervag/vimtex'
     use 'KeitaNakamura/tex-conceal.vim'
-    use({
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
-    })
     use 'bfrg/vim-cpp-modern'
     use {"ellisonleao/glow.nvim"}
     use {"tpope/vim-commentary"}
     use {"mbbill/undotree"}
-    use {"mhartington/formatter.nvim"}
+    use {"junegunn/goyo.vim"}
 end)

@@ -28,7 +28,7 @@ nmap("R", "<cmd>NvimTreeRefresh<cr>")
 nmap("<leader>s", "<cmd>HopWord<cr>")
 nmap("<leader>j", "<cmd>HopLine<cr>")
 -- Miscbindi
-nmap("<leader>t", "<C-w>s <C-w>j <cmd>term<cr><C-w>20-")
+nmap("<leader>t", "<cmd>term<cr>")
 nmap("<leader>u", "20<C-w>-")
 imap("jk", "<esc>")
 imap("JK", "<esc>")
