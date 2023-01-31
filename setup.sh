@@ -40,3 +40,5 @@ do
     home $file
 done
 
+cd ~
+git clone https://github.com/ohmyzsh/ohmyzsh .oh-my-zsh

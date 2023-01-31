@@ -154,3 +154,13 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/home/therealkey/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+PATH="/home/therealkey/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/therealkey/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/therealkey/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/therealkey/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/therealkey/perl5"; export PERL_MM_OPT;

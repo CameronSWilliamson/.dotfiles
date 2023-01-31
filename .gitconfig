@@ -20,3 +20,7 @@
     d = diff
     dv = difftool -t vimdiff -y
     gl = config --global -l
+[merge]
+	tool = nvimdiff
+[mergetool]
+	keepBackup = false
