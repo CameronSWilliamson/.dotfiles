@@ -107,15 +107,21 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="~/bin:$PATH"
 
 alias pdf="zathura"
-alias code="code --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto > /dev/null"
-alias atom="atom --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto > /dev/null"
-alias dev="cd ~/Nextcloud/Dev"
 alias v="nvim"
 alias vi="nvim"
 alias sdn="shutdown now"
 alias rdn="reboot"
-
 alias tmux="TERM=screen-256-color tmux"
+
+function cl(){
+    cd $1
+    l
+}
+
+function cm(){
+    mkdir -p $1
+    cd $1
+}
 
 source ~/.sdprc
 source ~/.cpscrc
