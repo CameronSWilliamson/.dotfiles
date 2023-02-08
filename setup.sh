@@ -21,6 +21,7 @@ configFiles=(
     i3
     kitty
     nvim
+    rofi
 )
 
 homeFiles=(
