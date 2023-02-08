@@ -22,6 +22,7 @@ configFiles=(
     kitty
     nvim
     rofi
+    polybar
 )
 
 homeFiles=(
