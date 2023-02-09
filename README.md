@@ -20,3 +20,5 @@ In order to install the symlinks run `bash ./setup.sh`
 ## Neovim Requirements
 
 - Packer
+- RipGrep
+- fzf
