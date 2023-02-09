@@ -30,6 +30,7 @@ homeFiles=(
     .tmux.conf
     .zshrc
     .condarc
+    .vimrc
 )
 
 for file in "${configFiles[@]}"
