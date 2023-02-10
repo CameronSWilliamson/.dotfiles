@@ -23,6 +23,7 @@ configFiles=(
     nvim
     rofi
     polybar
+    picom
 )
 
 homeFiles=(
