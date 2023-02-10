@@ -16,6 +16,7 @@ In order to install the symlinks run `bash ./setup.sh`
 - alacritty
 - dmenu
 - rofi
+- picom
 
 ## Neovim Requirements
 
