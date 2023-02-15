@@ -132,23 +132,23 @@ alias cpscrc="cat $HOME/.cpscrc"
 alias zshrc="cat $HOME/.zshrc"
 alias sau="sudo apt update; sudo apt upgrade -y"
 
-if [ "$TERM_PROGRAM" != "vscode" ] && [ -z "$TMUX" ]; then
+#if [ "$TERM_PROGRAM" != "vscode" ] && [ -z "$TMUX" ]; then
 #if [ -z "$TMUX" ]
 #then
-	exec tmux -2
-fi
+	#exec tmux -2
+#fi
 
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/therealkey/.anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/therealkey/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/therealkey/.anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/therealkey/.anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/therealkey/.miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/therealkey/.miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/therealkey/.anaconda3/bin:$PATH"
+        export PATH="/home/therealkey/.miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -161,3 +161,4 @@ export PATH="/home/therealkey/.rd/bin:$PATH"
 export PATH="/home/therealkey/.dotnet/tools:$PATH"
 export PATH="/home/therealkey/.arduino:$PATH"
 export DOTNET_ROOT="/usr/lib/dotnet"
+export PATH="/.local/share/nvim/mason/bin/:$PATH"
