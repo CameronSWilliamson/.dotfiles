@@ -3,6 +3,9 @@ ZSH_THEME="half-life"
 HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"
 plugins=(git)
+
+bindkey -s ^f "tmux-sessionizer\n"
+
 source $ZSH/oh-my-zsh.sh
 
 if [ -f "$HOME/.sdprc" ];
@@ -24,7 +27,6 @@ fi
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export GOPATH=$HOME/go
@@ -40,12 +42,13 @@ alias v="nvim"
 alias vi="nvim"
 alias sdn="shutdown now"
 alias rdn="reboot"
-alias tmux="TERM=screen-256-color tmux"
 alias bashrc="cat $HOME/.bashrc"
 alias sdprc="cat $HOME/.sdprc"
 alias cpscrc="cat $HOME/.cpscrc"
 alias zshrc="cat $HOME/.zshrc"
 alias sau="sudo apt update; sudo apt upgrade -y"
+alias open="xdg-open"
+alias yayskip="yay --mflags --skipinteg -Syu"
 
 function cl(){
     cd $1

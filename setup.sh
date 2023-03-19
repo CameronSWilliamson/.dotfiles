@@ -44,5 +44,7 @@ do
     home $file
 done
 
+link $BASE/scripts/* ~/.local/bin/
+
 cd ~
 git clone https://github.com/ohmyzsh/ohmyzsh .oh-my-zsh
