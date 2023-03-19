@@ -2,6 +2,10 @@
 
 BASE=$(pwd)
 
+if [ ! -d  "$HOME/.config/" ]; then
+    mkdir $HOME/.config
+fi
+
 function link() {
     ln -sf $BASE/$1 ~/$2
 }
