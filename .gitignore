@@ -1,5 +1,5 @@
 nvim/plugged/
 nvim/plugin/
-nvim/.undodir
+nvim/undodir
 gh/hosts.yml
 fish/fish_variables
