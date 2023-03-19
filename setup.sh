@@ -2,7 +2,7 @@
 
 BASE=$(pwd)
 
-chsh -s "/usr/bin/env zsh"
+chsh -s $(which zsh)
 
 if [ ! -d  "$HOME/.config/" ]; then
     mkdir $HOME/.config
