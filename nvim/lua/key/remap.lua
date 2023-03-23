@@ -29,3 +29,5 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 vim.keymap.set("n", "<leader>lspr", "<cmd>LspRestart<cr>")
+
+vim.keymap.set('c', 'w!!', ':w ! sudo tee % > /dev/null')
