@@ -49,6 +49,8 @@ alias zshrc="cat $HOME/.zshrc"
 alias sau="sudo apt update; sudo apt upgrade -y"
 alias open="xdg-open"
 alias yayskip="yay --mflags --skipinteg -Syu"
+alias aoe="setxkbmap -layout us"
+alias asd="setxkbmap -layout dvorak"
 
 function cl(){
     cd $1
