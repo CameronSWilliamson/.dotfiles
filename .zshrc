@@ -1,5 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="half-life"
+ZSH_THEME="dst"
 HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"
 plugins=(git)
@@ -51,6 +51,7 @@ alias open="xdg-open"
 alias yayskip="yay --mflags --skipinteg -Syu"
 alias aoe="setxkbmap -layout us"
 alias asd="setxkbmap -layout dvorak"
+alias pacmanmirror="sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist"
 
 function cl(){
     cd $1
