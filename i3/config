@@ -47,6 +47,9 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec alacritty
+bindsym $mod+b exec brave
+bindsym $mod+Shift+b exec brave --incognito
+bindsym $mod+f exec dolphin
 
 # kill focused window
 bindsym $mod+Shift+q kill
