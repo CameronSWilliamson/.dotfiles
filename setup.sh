@@ -26,10 +26,11 @@ configFiles=(
     gh
     i3
     kitty
-    nvim
+    #nvim
     rofi
     polybar
     picom
+    ranger
 )
 
 homeFiles=(
@@ -50,7 +51,11 @@ do
     home $file
 done
 
-link scripts/* ~/.local/bin/
+ln -sf $BASE/scripts/tmux-sessionizer $HOME/.local/bin
 
 cd ~
 git clone https://github.com/ohmyzsh/ohmyzsh .oh-my-zsh
+
+#mkdir -p ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+#git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+# ~/.local/share/nvim/site/pack/packer/start/packer.nvim
