@@ -211,6 +211,7 @@ client.background       #ffffff
 bindsym $mod+Escape exec i3lock -c 000000
 bindsym Print exec flameshot gui
 exec --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id feh --bg-scale ~/Downloads/wp8000218-anime-2560x1440-wallpapers.png
+#exec --no-startup-id feh --bg-scale ~/Downloads/wp8000218-anime-2560x1440-wallpapers.png
+exec --no-startup-id feh --bg-scale ~/Downloads/wp8279285-anime-2560x1440-wallpapers.jpg
 exec --no-startup-id seafile-applet
 #exec --no-startup-id picom -b --experimental-backends
