@@ -3,12 +3,15 @@
 set -e
 
 mkdir -p ~/.config
-pushd .config
+pushd config
+echo "Writing config files to ~/.config/"
 stow . -t ~/.config
 popd
 pushd home
+echo "Writing home files to ~/"
 stow . -t ~
 popd
 pushd private-dotfiles
+echo "Writing private-dotfiles to ~/"
 stow . -t ~
 popd
