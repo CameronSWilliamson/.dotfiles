@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
 pushd .config
-stow -d . -t ~/.config
+stow . -t ~/.config
 popd
 pushd home
-stow -d . -t ~
+stow . -t ~
 popd
