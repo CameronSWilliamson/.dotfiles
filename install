@@ -9,3 +9,6 @@ popd
 pushd home
 stow . -t ~
 popd
+pushd private-dotfiles
+stow . -t ~
+popd
