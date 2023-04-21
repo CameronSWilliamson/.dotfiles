@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+set -e
+
+mkdir -p ~/.config
 pushd .config
 stow . -t ~/.config
 popd
