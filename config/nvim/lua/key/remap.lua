@@ -24,7 +24,10 @@ vim.keymap.set("n", "<leader>p", "\"_dP")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 vim.keymap.set("n", "<leader>bf", "<cmd>!black %<cr>", {silent = true})
-vim.keymap.set("n", "<leader>rf", "<cmd>!rustfmt %<cr>", {silent = true})
+vim.keymap.set("n", "<leader>rf", "<cmd>!rustfmt --edition 2021 %<cr>", {silent = true})
+vim.keymap.set("n", "<leader>pf", "<cmd>!npx prettier --write %<cr>", {silent = true })
+vim.keymap.set("n", "<leader>cpd", "<cmd>Copilot disable<cr>")
+vim.keymap.set("n", "<leader>cpe", "<cmd>Copilot enable<cr>")
 
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
