@@ -52,6 +52,12 @@ alias yayskip="yay --mflags --skipinteg -Syu"
 alias aoe="setxkbmap -layout us"
 alias asd="setxkbmap -layout dvorak"
 alias pacmanmirror="sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist"
+alias ta="tmux a"
+
+function vf() {
+    file=$(fzf)
+    nvim $file
+}
 
 function cl(){
     cd $1
