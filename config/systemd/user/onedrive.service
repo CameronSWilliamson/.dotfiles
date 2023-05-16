@@ -1,0 +1,10 @@
+[Unit]
+Description=Setup Onedrive
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/rclone --vfs-cache-mode writes mount OneDrive: /home/therealkey/OneDrive --allow-non-empty
+Restart=always
+
+[Install]
+WantedBy=default.target
