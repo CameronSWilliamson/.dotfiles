@@ -35,6 +35,8 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="~/bin:$PATH"
 export PATH="/.local/share/nvim/mason/bin/:$PATH"
+export PATH="$HOME/.dotfiles/scripts/:$PATH"
+export PATH="$HOME/.local/.npm-global/bin:$PATH"
 export DOTFILES="$HOME/.dotfiles"
 
 alias pdf="zathura"
