@@ -71,6 +71,22 @@ function cm(){
     cd $1
 }
 
+function github-runner {
+    name=github-runner-${1//\//-}
+    org=$(dirname $1)
+    repo=$(basename $1)
+    tag=${3:-latest}
+    docker rm -f $name
+    docker run -d --restart=always \
+        -e REPO_URL="https://github.com/${org}/${repo}" \
+        -e RUNNER_TOKEN="$2" \
+        -e RUNNER_NAME="linux-${repo}" \
+        -e RUNNER_WORKDIR="/tmp/github-runner-${repo}" \
+        -v /var/run/docker.sock:/var/run/docker.sock \
+        -v /tmp/github-runner-${repo}:/tmp/github-runner-${repo} \
+        --name $name myoung34/github-runner:latest
+}
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/therealkey/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
