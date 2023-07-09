@@ -73,18 +73,28 @@ function cm(){
 
 function github-runner {
     name=github-runner-${1//\//-}
+    runnerCount=$(docker container ls --format "{{.Names}}" | grep $name | wc -l)
     org=$(dirname $1)
     repo=$(basename $1)
     tag=${3:-latest}
-    docker rm -f $name
     docker run -d --restart=always \
         -e REPO_URL="https://github.com/${org}/${repo}" \
         -e RUNNER_TOKEN="$2" \
-        -e RUNNER_NAME="linux-${repo}" \
+        -e RUNNER_NAME="linux-${repo}-${runnerCount}" \
         -e RUNNER_WORKDIR="/tmp/github-runner-${repo}" \
         -v /var/run/docker.sock:/var/run/docker.sock \
-        -v /tmp/github-runner-${repo}:/tmp/github-runner-${repo} \
-        --name $name myoung34/github-runner:latest
+        -v "/tmp/github-runner-${repo}-${runnerCount}":/tmp/github-runner-${repo} \
+        --name "${name}-${runnerCount}" myoung34/github-runner:latest
+}
+
+function stop-github-runner {
+    name=github-runner-${1//\//-}
+    echo $name
+    items=$(docker container ls --format "{{.Names}}" | grep $name)
+
+    for container in "${items[@]}"; do
+        docker rm -f $container
+    done
 }
 
 # >>> conda initialize >>>
