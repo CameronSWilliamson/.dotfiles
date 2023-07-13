@@ -23,6 +23,7 @@ vim.keymap.set("n", "<leader>p", "\"_dP")
 
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
+vim.keymap.set("n", "<leader>f", "<cmd>!format.sh %<cr>")
 vim.keymap.set("n", "<leader>bf", "<cmd>!black %<cr>", {silent = true})
 vim.keymap.set("n", "<leader>rf", "<cmd>!rustfmt --edition 2021 %<cr>", {silent = true})
 vim.keymap.set("n", "<leader>pf", "<cmd>!npx prettier --write %<cr>", {silent = true })
