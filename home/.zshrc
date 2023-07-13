@@ -52,7 +52,7 @@ alias sau="sudo apt update; sudo apt upgrade -y"
 alias open="xdg-open"
 alias yayskip="yay --mflags --skipinteg -Syu"
 alias aoe="setxkbmap -layout us"
-alias asd="setxkbmap -layout dvorak"
+alias asd="setxkbmap -layout us -variant dvorak"
 alias pacmanmirror="sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist"
 alias ta="tmux a"
 
