@@ -50,4 +50,5 @@ return require('packer').startup(function(use)
     use { 'f-person/git-blame.nvim' }
     use { 'airblade/vim-gitgutter' }
     use { 'phaazon/hop.nvim' }
+    use { 'simrat39/rust-tools.nvim' }
 end)
