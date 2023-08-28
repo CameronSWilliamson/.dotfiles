@@ -9,5 +9,6 @@ then
         rs) rustfmt --edition 2021 $1;;
         js | ts | jsx | tsx | html | json) npx prettier --write $1;;
         py) black $1;;
+        ml) ocamlformat $1 --inplace;;
     esac
 fi

@@ -20,7 +20,6 @@ lsp.setup()
 
 
 lsp.ensure_installed({
-  'tsserver',
   'rust_analyzer',
 })
 
