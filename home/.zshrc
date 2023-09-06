@@ -55,6 +55,7 @@ alias aoe="setxkbmap -layout us"
 alias asd="setxkbmap -layout us -variant dvorak"
 alias pacmanmirror="sudo reflector --verbose --latest 20 --sort rate --save /etc/pacman.d/mirrorlist"
 alias ta="tmux a"
+alias dune="nocorrect dune"
 
 function vf() {
     file=$(fzf)

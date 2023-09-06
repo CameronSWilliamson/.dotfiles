@@ -8,20 +8,7 @@ return require('packer').startup(function(use)
 		requires = { { 'nvim-lua/plenary.nvim'} }
 	}
 
-    use {
-        'rebelot/kanagawa.nvim',
-        as = 'kanagawa',
-        config = function()
-            vim.cmd('colorscheme kanagawa')
-        end
-    }
-
 	use {'nvim-treesitter/nvim-treesitter', {run = ":TSUpdate"}}
-	use {'nvim-treesitter/playground'}
-	use {'theprimeagen/harpoon'}
-	use {'mbbill/undotree'}
-	use {'tpope/vim-fugitive'}
-    use {'tpope/vim-surround'}
 
 	use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -46,7 +33,12 @@ return require('packer').startup(function(use)
 	  }
 	}
 
-    use { 'github/copilot.vim' }
+    use {'navarasu/onedark.nvim'}
+	use {'nvim-treesitter/playground'}
+	use {'theprimeagen/harpoon'}
+	use {'mbbill/undotree'}
+	use {'tpope/vim-fugitive'}
+    use {'tpope/vim-surround'}
     use { 'f-person/git-blame.nvim' }
     use { 'airblade/vim-gitgutter' }
     use { 'phaazon/hop.nvim' }
