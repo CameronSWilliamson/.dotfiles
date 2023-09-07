@@ -8,7 +8,11 @@ return require('packer').startup(function(use)
 		requires = { { 'nvim-lua/plenary.nvim'} }
 	}
 
-	use {'nvim-treesitter/nvim-treesitter', {run = ":TSUpdate"}}
+    use {'nvim-treesitter/nvim-treesitter', {run = ":TSUpdate"}}
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 
 	use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -39,8 +43,8 @@ return require('packer').startup(function(use)
 	use {'mbbill/undotree'}
 	use {'tpope/vim-fugitive'}
     use {'tpope/vim-surround'}
-    use { 'f-person/git-blame.nvim' }
-    use { 'airblade/vim-gitgutter' }
-    use { 'phaazon/hop.nvim' }
-    use { 'simrat39/rust-tools.nvim' }
+    use {'f-person/git-blame.nvim'}
+    use {'airblade/vim-gitgutter'}
+    use {'phaazon/hop.nvim'}
+    use {'simrat39/rust-tools.nvim'}
 end)
