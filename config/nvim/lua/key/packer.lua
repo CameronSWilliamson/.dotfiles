@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
 		requires = { { 'nvim-lua/plenary.nvim'} }
 	}
 
-    use {'nvim-treesitter/nvim-treesitter', {run = ":TSUpdate"}}
+    use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
@@ -47,4 +47,8 @@ return require('packer').startup(function(use)
     use {'airblade/vim-gitgutter'}
     use {'phaazon/hop.nvim'}
     use {'simrat39/rust-tools.nvim'}
+    use {
+       "m4xshen/hardtime.nvim",
+       requires = { 'MunifTanjim/nui.nvim', "nvim-lua/plenary.nvim" }
+    }
 end)
