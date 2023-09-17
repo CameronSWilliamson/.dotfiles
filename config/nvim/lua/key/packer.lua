@@ -38,6 +38,7 @@ return require('packer').startup(function(use)
 	}
 
     use {'navarasu/onedark.nvim'}
+    use {'projekt0n/caret.nvim'}
 	use {'nvim-treesitter/playground'}
 	use {'theprimeagen/harpoon'}
 	use {'mbbill/undotree'}
@@ -47,8 +48,4 @@ return require('packer').startup(function(use)
     use {'airblade/vim-gitgutter'}
     use {'phaazon/hop.nvim'}
     use {'simrat39/rust-tools.nvim'}
-    use {
-       "m4xshen/hardtime.nvim",
-       requires = { 'MunifTanjim/nui.nvim', "nvim-lua/plenary.nvim" }
-    }
 end)
