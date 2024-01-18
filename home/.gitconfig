@@ -12,14 +12,21 @@
 [init]
 	defaultBranch = main
 [alias]
-	s = status -sb
+    s = status -sb
+    st = status
     a = add
-	l = log --oneline
-	last = log -1 HEAD --stat
-	cm = commit -m
+    l = log --oneline
+    last = log -1 HEAD --stat
+    cm = commit -m
     d = diff
     dv = difftool -t vimdiff -y
     gl = config --global -l
+    cl = clean -Xdf
+    ca = commit --ammend --no-edit
+    p = push
+    pf = push --force-with-lease
+	rbc = rebase --continue
+	rba = rebase --abort
 [merge]
 	tool = nvimdiff
 [mergetool]
