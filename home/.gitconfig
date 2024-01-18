@@ -22,7 +22,7 @@
     dv = difftool -t vimdiff -y
     gl = config --global -l
     cl = clean -Xdf
-    ca = commit --ammend --no-edit
+    ca = commit --amend --no-edit
     p = push
     pf = push --force-with-lease
 	rbc = rebase --continue
